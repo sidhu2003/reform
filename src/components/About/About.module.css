@@ -5,6 +5,7 @@
   box-sizing: border-box;
   height: auto;
   flex-direction: column;
+  align-items: center;
 }
 
 .left-container,
@@ -43,7 +44,7 @@
   }
 
   .right-container {
-    height: 400px;
+    height: 100%;
     overflow: hidden;
   }
   .right-container img {
