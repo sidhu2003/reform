@@ -1,3 +1,5 @@
 .App {
   font-family: "Alebert Sans";
+  width: 100%;
+  overflow: hidden;
 }
