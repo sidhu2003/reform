@@ -9,6 +9,8 @@ import About from "../../components/About/About";
 import Blogs from "../../components/Blog/Blogs";
 import styles from "../../components/Header/styles.module.css";
 import Partner from "../../components/Partner/Partner";
+import Footer from "../../components/Footer/Footer";
+import New_footer from "../../components/Footer/New_footer";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -58,6 +60,7 @@ export default function Home() {
         <section id="contact">
           <ContactUs />
         </section>
+        <New_footer />
       </div>
     </div>
   );

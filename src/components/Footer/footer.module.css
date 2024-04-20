@@ -1,0 +1,110 @@
+.footer {
+  width: 100%;
+  min-height: 350px;
+  margin-top: 50px;
+  height: auto;
+  background-color: #014753;
+}
+
+.first {
+  width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.footerwrapper {
+  min-height: 300px;
+  width: 90%;
+  height: auto;
+
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  border-bottom: 1px solid rgb(212, 202, 202);
+  flex-wrap: wrap;
+}
+.lastcontainer {
+  height: 50px;
+  width: 90%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 13px;
+}
+.wrappest {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+.end {
+  display: flex;
+  flex-wrap: wrap;
+}
+.quicklinks {
+  color: white;
+  width: 170px;
+  height: 220px;
+}
+.quicklink,
+.contactinfo {
+  font-size: 18px;
+}
+.quickoptions div {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.options div {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.locationwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.location {
+  height: 15px;
+  width: 15px;
+}
+.quickoptions div:hover {
+  color: #8bd7ae;
+  cursor: pointer;
+}
+.contacts {
+  color: white;
+  height: 220px;
+  width: 300px;
+}
+.footerwrapper {
+  display: flex;
+}
+.content {
+  color: white;
+  font-size: 12px;
+}
+.reform {
+  width: 200px;
+  height: 60px;
+}
+.logowrappers {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo {
+  height: 35px;
+  width: 35px;
+}

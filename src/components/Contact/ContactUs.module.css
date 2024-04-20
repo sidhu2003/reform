@@ -5,7 +5,10 @@
   background-image: url("./contactbg.png");
   background-color: rgba(0, 0, 0, 0);
   display: flex;
-  height: calc(100vh - 100px);
+  height: fit-content;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .contactUsBtn {
@@ -180,11 +183,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contactus {
-    flex-direction: column;
-    width: 100%;
-  }
-
   .leftContact,
   .rightContact {
     width: 100%;
@@ -220,11 +218,6 @@
 }
 
 @media screen and (min-width: 769px) {
-  .contactus {
-    width: 80%;
-    margin: 0 10%;
-  }
-
   .leftContact,
   .rightContact {
     width: 50%;
@@ -237,5 +230,11 @@
 
   .toggleon {
     margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactus {
+    flex-direction: column;
   }
 }

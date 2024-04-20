@@ -1,23 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import quote from "./quote.png";
 import star from "./star.svg";
 import user1 from "./user_profile1.png";
 
 export default function Testmonials() {
+  const [no_of_testimonials, setNo_of_testimonials] = useState(9);
+
   function slide(n) {
     let dot = document.getElementById(`dot${n}`);
     document
       .getElementsByClassName(styles.active)[0]
       .classList.remove(styles.active);
     dot.classList.add(styles.active);
-    document
-      .querySelectorAll("." + styles.testimonial)
-      .forEach((testimonial) => {
-        testimonial.style.transform = `translateX(calc(-${3 * (n - 1)}00% - ${
-          (n - 1) * 60
-        }px)`;
-      });
+    if (window.innerWidth < 550)
+      document
+        .querySelectorAll("." + styles.testimonial)
+        .forEach((testimonial) => {
+          testimonial.style.transform = `translateX(calc(-${1 * (n - 1)}00%`;
+        });
+    else if (window.innerWidth < 900)
+      document
+        .querySelectorAll("." + styles.testimonial)
+        .forEach((testimonial) => {
+          testimonial.style.transform = `translateX(calc(-${2 * (n - 1)}00% - ${
+            (n - 1) * 40
+          }px)`;
+        });
+    else
+      document
+        .querySelectorAll("." + styles.testimonial)
+        .forEach((testimonial) => {
+          testimonial.style.transform = `translateX(calc(-${3 * (n - 1)}00% - ${
+            (n - 1) * 60
+          }px)`;
+        });
   }
   return (
     <div className={styles.testimonials_container}>
@@ -244,13 +261,28 @@ export default function Testmonials() {
         </div>
       </div>
       <div className={styles.controller}>
-        <div
-          id="dot1"
-          onClick={() => slide(1)}
-          className={`${styles.dot} ${styles.active}`}
-        ></div>
-        <div id="dot2" onClick={() => slide(2)} className={styles.dot}></div>
-        <div id="dot3" onClick={() => slide(3)} className={styles.dot}></div>
+        {console.log(
+          window.innerWidth < 550
+            ? no_of_testimonials
+            : window.innerWidth < 900
+            ? no_of_testimonials / 2
+            : no_of_testimonials / 3
+        )}
+        {[
+          ...Array(
+            window.innerWidth < 550
+              ? no_of_testimonials
+              : window.innerWidth < 900
+              ? Math.ceil(no_of_testimonials / 2)
+              : Math.ceil(no_of_testimonials / 3)
+          ),
+        ].map((_, i) => (
+          <div
+            id={`dot${i + 1}`}
+            onClick={() => slide(i + 1)}
+            className={`${styles.dot} ${i === 0 ? styles.active : ""}`}
+          ></div>
+        ))}
       </div>
     </div>
   );
