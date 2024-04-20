@@ -3,3 +3,11 @@
   width: 100%;
   overflow: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header_scrolled {
+  background-color: red;
+}
