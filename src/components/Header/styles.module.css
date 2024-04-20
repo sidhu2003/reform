@@ -12,16 +12,49 @@
   z-index: 9;
 }
 
+.white_logo {
+  display: none;
+}
+
+.header_scroll .white_logo {
+  display: block;
+}
+
+.header_scroll .logo {
+  display: none;
+}
+
 .header a {
   text-decoration: none;
   color: black;
 }
+
+.header_scroll a {
+  color: white;
+}
+
+/* .header_scroll .contact_btn {
+  background-color: white;
+  color: #004652;
+} */
 
 .logo {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.white_logo img {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_scroll {
+  background-color: #004652;
+  color: white !important;
 }
 
 .header_list {

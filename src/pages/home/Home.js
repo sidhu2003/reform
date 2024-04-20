@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useEffect } from "react";
 import Header from "../../components/Header/Header";
 import Welcome from "../../components/Welcome/Welcome";
 import Testmonials from "../../components/Testmonials/Testmonials";
@@ -6,12 +7,31 @@ import Services from "../../components/Services/Services";
 import ContactUs from "../../components/Contact/ContactUs";
 import About from "../../components/About/About";
 import Blogs from "../../components/Blog/Blogs";
+import styles from "../../components/Header/styles.module.css";
 
 export default function Home() {
+  const scroll = useRef(null);
+
+  const handleScroll = () => {
+    if (scroll.current) {
+      const { scrollTop, scrollLeft } = scroll.current;
+      if (scrollTop > 1000) {
+        document.getElementById("header").classList.add(styles.header_scroll);
+      } else {
+        document
+          .getElementById("header")
+          .classList.remove(styles.header_scroll);
+      }
+    }
+  };
+
   return (
     <div>
       <Header />
       <div
+        ref={scroll}
+        id="container"
+        onScroll={handleScroll}
         style={{
           marginTop: "100px",
           height: "calc(100vh - 100px",

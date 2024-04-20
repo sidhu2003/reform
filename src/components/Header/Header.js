@@ -2,12 +2,16 @@ import React from "react";
 import styles from "./styles.module.css";
 import logo from "./logo.png";
 import phone from "./phone-call.svg";
+import white_logo from "./white_logo.png";
 
 export default function Header() {
   return (
     <div id="header" className={styles.header}>
       <div className={styles.logo}>
         <img src={logo} alt="logo" />
+      </div>
+      <div className={styles.white_logo}>
+        <img src={white_logo} alt="logo" />
       </div>
       <ul className={styles.header_list}>
         <li id="header-welcome" className={styles.active}>
