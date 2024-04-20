@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   height: fit-content;
+  margin-bottom: 50px;
 }
 
 .label {
@@ -168,5 +169,13 @@
 @media (max-width: 600px) {
   .details {
     display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 70%;
   }
 }

@@ -261,13 +261,6 @@ export default function Testmonials() {
         </div>
       </div>
       <div className={styles.controller}>
-        {console.log(
-          window.innerWidth < 650
-            ? no_of_testimonials
-            : window.innerWidth < 900
-            ? no_of_testimonials / 2
-            : no_of_testimonials / 3
-        )}
         {[
           ...Array(
             window.innerWidth < 650

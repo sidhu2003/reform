@@ -11,6 +11,7 @@ import styles from "../../components/Header/styles.module.css";
 import Partner from "../../components/Partner/Partner";
 import Footer from "../../components/Footer/Footer";
 import New_footer from "../../components/Footer/New_footer";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -30,6 +31,7 @@ export default function Home() {
 
   return (
     <div>
+      <Sidebar />
       <Header />
       <div
         ref={scroll}
@@ -39,6 +41,7 @@ export default function Home() {
           marginTop: "100px",
           height: "calc(100vh - 100px",
           overflow: "scroll",
+          scrollBehavior: "smooth",
         }}
       >
         <section id="welcome">
