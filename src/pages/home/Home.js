@@ -38,8 +38,8 @@ export default function Home() {
         id="container"
         onScroll={handleScroll}
         style={{
-          marginTop: "100px",
-          height: "calc(100vh - 100px",
+          marginTop: "90px",
+          height: "calc(100vh - 90px)",
           overflow: "scroll",
           scrollBehavior: "smooth",
         }}

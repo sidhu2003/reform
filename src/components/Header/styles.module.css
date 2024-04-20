@@ -1,5 +1,5 @@
 .header {
-  height: 100px;
+  height: 90px;
   position: fixed;
   background-color: white;
   display: flex;
@@ -188,6 +188,13 @@
   }
   .header {
     padding: 10px 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home_container {
+    height: calc(100% - 70px);
+    margin-top: 70px;
   }
 }
 

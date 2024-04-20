@@ -30,3 +30,7 @@
   color: black;
   font-weight: 400;
 }
+
+.header_list a:hover {
+  color: #074954;
+}
