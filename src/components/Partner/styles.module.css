@@ -24,7 +24,7 @@
   align-items: center;
   gap: 40px;
   right: -100%;
-  animation: rotate 8s infinite ease-in-out;
+  animation: rotate 8s infinite ease;
 }
 
 .logos img {

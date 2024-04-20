@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .testimonials {
     gap: 0px;
   }

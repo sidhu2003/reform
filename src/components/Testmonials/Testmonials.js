@@ -13,7 +13,7 @@ export default function Testmonials() {
       .getElementsByClassName(styles.active)[0]
       .classList.remove(styles.active);
     dot.classList.add(styles.active);
-    if (window.innerWidth < 550)
+    if (window.innerWidth < 650)
       document
         .querySelectorAll("." + styles.testimonial)
         .forEach((testimonial) => {
@@ -262,7 +262,7 @@ export default function Testmonials() {
       </div>
       <div className={styles.controller}>
         {console.log(
-          window.innerWidth < 550
+          window.innerWidth < 650
             ? no_of_testimonials
             : window.innerWidth < 900
             ? no_of_testimonials / 2
@@ -270,7 +270,7 @@ export default function Testmonials() {
         )}
         {[
           ...Array(
-            window.innerWidth < 550
+            window.innerWidth < 650
               ? no_of_testimonials
               : window.innerWidth < 900
               ? Math.ceil(no_of_testimonials / 2)
