@@ -23,22 +23,22 @@ export default function Sidebar() {
     >
       <div className={styles.sidebar_container}>
         <ul className={styles.header_list}>
-          <li id="header-welcome" className={styles.active}>
+          <li className={styles.active}>
             <a href="#welcome">Home</a>
           </li>
-          <li id="header-about">
+          <li>
             <a href="#about">About Us</a>
           </li>
-          <li id="header-services">
+          <li>
             <a href="#services">Services</a>
           </li>
-          <li id="header-testimonials">
+          <li>
             <a href="#testimonials">Grant Schemes</a>
           </li>
-          <li id="header-blog">
+          <li>
             <a href="#blog">News</a>
           </li>
-          <li id="header-contact">
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
