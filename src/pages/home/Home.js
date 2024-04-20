@@ -8,6 +8,7 @@ import ContactUs from "../../components/Contact/ContactUs";
 import About from "../../components/About/About";
 import Blogs from "../../components/Blog/Blogs";
 import styles from "../../components/Header/styles.module.css";
+import Partner from "../../components/Partner/Partner";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -53,6 +54,7 @@ export default function Home() {
         <section id="testimonials">
           <Testmonials />
         </section>
+        <Partner />
         <section id="contact">
           <ContactUs />
         </section>
