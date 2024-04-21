@@ -57,15 +57,14 @@
 }
 
 .abt-us {
-  background-color: #014753;
-  color: #bccfd2;
-  border: none;
-  font-size: 12px;
-  letter-spacing: 1px;
-  padding: 11px 16px;
-  border-radius: 4px;
+  width: fit-content;
+  margin-top: 30px;
+  padding: 15px 30px;
+  height: fit-content;
+  background-color: #004652;
+  color: white;
+  clip-path: polygon(85% 1%, 100% 40%, 100% 100%, 0 99%, 0 0);
   margin-bottom: 20px;
-  border-top-right-radius: 15px;
 }
 
 .title {
@@ -125,7 +124,7 @@ p {
   margin-top: 30px;
   letter-spacing: 1px;
   padding: 20px 35px;
-  border-radius: 0 30px 0 0;
+  clip-path: polygon(85% 1%, 100% 40%, 100% 100%, 0 99%, 0 0);
 }
 
 .right-container img {
@@ -141,14 +140,16 @@ p {
     width: 100%;
     margin-top: 20px;
   }
-  .left-container,
-  .right-container {
+  .left-container {
     padding: 20px !important;
   }
   .title {
     font-size: 1.8rem !important;
   }
   .right-container {
-    margin-top: 10px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
