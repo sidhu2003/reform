@@ -50,6 +50,10 @@
   justify-content: center;
 }
 
+.checkbox input {
+  margin-right: 10px;
+}
+
 .hr_line {
   height: 30px;
   width: 3px;
