@@ -113,6 +113,7 @@
   width: 34px;
   display: none;
   justify-content: center;
+  cursor: pointer;
 }
 
 .header_scroll .bar1,
