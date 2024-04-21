@@ -8,6 +8,7 @@
   justify-content: space-around;
   padding: 50px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .partner_container img {
@@ -23,19 +24,27 @@
   justify-content: space-around;
   align-items: center;
   gap: 40px;
-  right: -100%;
-  animation: rotate 8s infinite ease;
+  /* right: -100%; */
+  animation: move-left-to-right 10s linear infinite;
 }
 
 .logos img {
   width: auto;
 }
 
-@keyframes rotate {
-  from {
-    right: -90%;
+@keyframes move-left-to-right {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    right: 90%;
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 550px) {
+  .logos img {
+    width: 100px;
+    height: auto;
   }
 }

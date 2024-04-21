@@ -1,14 +1,11 @@
 .contactus {
-  height: max-content;
-  width: 80%;
-  margin: 0 10%;
-  background-image: url("./contactbg.png");
-  background-color: rgba(0, 0, 0, 0);
   display: flex;
-  height: fit-content;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  margin-bottom: 70px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("./contactbg.png");
+  margin-bottom: 20px;
 }
 
 .contactUsBtn {
@@ -31,17 +28,13 @@
 
 .leftContact {
   width: 50%;
-  margin: 3% 0;
-  height: max-content;
 }
 
 .rightContact {
-  margin: 3% 0;
   width: 50%;
-  height: max-content;
 }
 
-.p {
+p {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.447);
   word-break: keep-all;
@@ -54,6 +47,7 @@
   align-items: flex-start;
   flex-direction: column;
   width: 50%;
+  margin: 10% 2%;
   height: max-content;
 }
 
@@ -74,78 +68,60 @@
   font-weight: 600;
 }
 
-.rightContact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.contactus input {
-  width: 80%;
+.inputField,
+.textareaInput {
+  width: 100%;
   padding: 20px;
   border: none;
+  box-sizing: border-box;
   background-color: #ddf6e775;
   color: #54838a;
   font-weight: 600;
   font-size: 15px;
-  margin: 10px;
+  margin: 10px 0;
   border-top-right-radius: 30px;
 }
 
 .textareaInput {
-  width: 80%;
-  padding: 20px;
-  border: none;
-  background-color: #ddf6e775;
-  color: #54838a;
-  font-weight: 600;
-  font-size: 15px;
-  margin: 10px;
   height: 100px;
-  border-top-right-radius: 30px;
   max-width: 100%;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-}
-
-.toggleon {
-  width: 50px;
-  height: 30px;
-  color: #014753;
+  gap: 20px;
 }
 
 .row2 {
-  width: 85%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin: 5% 0;
-  height: 100px;
-  display: flex;
 }
 
 .agree {
-  width: 55%;
-  word-spacing: 3px;
-  margin: 5% 2%;
+  width: calc(50% - 24px);
+  margin: 5% 0;
+  text-align: center;
   color: grey;
   font-weight: 600;
   line-height: 20px;
 }
 
 .submitBtn {
+  width: calc(50% - 24px);
+  margin: 5% 0;
   background-color: #014753;
   color: #bccfd2;
   border: none;
   font-size: 15px;
   letter-spacing: 1px;
-  margin: 5% 0;
-  padding: 20px 45px;
+  padding: 20px;
   border-radius: 4px;
   border-top-right-radius: 25px;
   cursor: pointer;
@@ -182,6 +158,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contactus {
+    flex-direction: column;
+  }
+
   .leftContact,
   .rightContact {
     width: 100%;
@@ -193,11 +173,7 @@
 
   .details {
     width: 100%;
-  }
-
-  .row,
-  .row2 {
-    flex-direction: column;
+    margin: 10% 2%;
   }
 
   .toggleon {
@@ -206,33 +182,30 @@
 
   .agree {
     width: 100%;
-    text-align: center;
   }
 
-  input,
-  textarea {
-    width: calc(100% - 20px);
-    margin: 10px;
+  .inputField,
+  .textareaInput {
+    margin: 10px 0;
   }
 }
 
 @media screen and (min-width: 769px) {
-  .leftContact,
-  .rightContact {
-    width: 50%;
+  .contactus {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .details {
     width: 80%;
+    margin: 10% auto;
   }
 
   .toggleon {
     margin: 0;
   }
 }
-
-@media (max-width: 700px) {
-  .contactus {
-    flex-direction: column;
-  }
+.toggleon {
+  font-size: 40px;
+  margin: 0;
 }

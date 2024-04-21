@@ -5,7 +5,7 @@ import star from "./star.svg";
 import user1 from "./user_profile1.png";
 
 export default function Testmonials() {
-  const [no_of_testimonials, setNo_of_testimonials] = useState(9);
+  const [no_of_testimonials, setNo_of_testimonials] = useState(4);
 
   function slide(n) {
     let dot = document.getElementById(`dot${n}`);
@@ -17,7 +17,9 @@ export default function Testmonials() {
       document
         .querySelectorAll("." + styles.testimonial)
         .forEach((testimonial) => {
-          testimonial.style.transform = `translateX(calc(-${1 * (n - 1)}00%`;
+          testimonial.style.transform = `translateX(calc(-${1 * (n - 1)}00% - ${
+            (n - 1) * 20
+          }px`;
         });
     else if (window.innerWidth < 900)
       document
@@ -32,7 +34,7 @@ export default function Testmonials() {
         .querySelectorAll("." + styles.testimonial)
         .forEach((testimonial) => {
           testimonial.style.transform = `translateX(calc(-${3 * (n - 1)}00% - ${
-            (n - 1) * 60
+            (n - 1) * 70
           }px)`;
         });
   }
@@ -43,126 +45,6 @@ export default function Testmonials() {
         What they're saying about our work feedback
       </h2>
       <div className={styles.testimonials} id="testimonials">
-        <div className={styles.testimonial}>
-          <div className={styles.quote}>
-            <img src={quote} alt="quote" />
-          </div>
-          <div className={styles.feedback}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati.
-          </div>
-          <div className={styles.user}>
-            <div className={styles.user_img}>
-              <img src={user1} alt="user_profile" />
-            </div>
-            <div className={styles.user_details}>
-              <div className={styles.user_name}>John Doe</div>
-              <div className={styles.user_position}>Sales Manager, Envato</div>
-            </div>
-          </div>
-          <div className={styles.stars}>
-            {[1, 2, 3, 4, 5].map((s) => (
-              <img src={star} alt="star" />
-            ))}
-          </div>
-        </div>
-        <div className={styles.testimonial}>
-          <div className={styles.quote}>
-            <img src={quote} alt="quote" />
-          </div>
-          <div className={styles.feedback}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati.
-          </div>
-          <div className={styles.user}>
-            <div className={styles.user_img}>
-              <img src={user1} alt="user_profile" />
-            </div>
-            <div className={styles.user_details}>
-              <div className={styles.user_name}>John Doe</div>
-              <div className={styles.user_position}>Sales Manager, Envato</div>
-            </div>
-          </div>
-          <div className={styles.stars}>
-            {[1, 2, 3, 4, 5].map((s) => (
-              <img src={star} alt="star" />
-            ))}
-          </div>
-        </div>
-        <div className={styles.testimonial}>
-          <div className={styles.quote}>
-            <img src={quote} alt="quote" />
-          </div>
-          <div className={styles.feedback}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati.
-          </div>
-          <div className={styles.user}>
-            <div className={styles.user_img}>
-              <img src={user1} alt="user_profile" />
-            </div>
-            <div className={styles.user_details}>
-              <div className={styles.user_name}>John Doe</div>
-              <div className={styles.user_position}>Sales Manager, Envato</div>
-            </div>
-          </div>
-          <div className={styles.stars}>
-            {[1, 2, 3, 4, 5].map((s) => (
-              <img src={star} alt="star" />
-            ))}
-          </div>
-        </div>
-        <div className={styles.testimonial}>
-          <div className={styles.quote}>
-            <img src={quote} alt="quote" />
-          </div>
-          <div className={styles.feedback}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati.
-          </div>
-          <div className={styles.user}>
-            <div className={styles.user_img}>
-              <img src={user1} alt="user_profile" />
-            </div>
-            <div className={styles.user_details}>
-              <div className={styles.user_name}>John Doe</div>
-              <div className={styles.user_position}>Sales Manager, Envato</div>
-            </div>
-          </div>
-          <div className={styles.stars}>
-            {[1, 2, 3, 4, 5].map((s) => (
-              <img src={star} alt="star" />
-            ))}
-          </div>
-        </div>
-        <div className={styles.testimonial}>
-          <div className={styles.quote}>
-            <img src={quote} alt="quote" />
-          </div>
-          <div className={styles.feedback}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati.
-          </div>
-          <div className={styles.user}>
-            <div className={styles.user_img}>
-              <img src={user1} alt="user_profile" />
-            </div>
-            <div className={styles.user_details}>
-              <div className={styles.user_name}>John Doe</div>
-              <div className={styles.user_position}>Sales Manager, Envato</div>
-            </div>
-          </div>
-          <div className={styles.stars}>
-            {[1, 2, 3, 4, 5].map((s) => (
-              <img src={star} alt="star" />
-            ))}
-          </div>
-        </div>
         <div className={styles.testimonial}>
           <div className={styles.quote}>
             <img src={quote} alt="quote" />

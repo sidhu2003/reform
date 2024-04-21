@@ -2,6 +2,7 @@
 
 .wrapper {
   width: 100%;
+  overflow: hidden;
   height: fit-content;
   margin-bottom: 50px;
 }
@@ -130,6 +131,15 @@
   font-weight: 600;
 }
 
+@media (max-width: 1000px) {
+  .latest {
+    font-size: 1.8rem;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 1300px) {
   .eachphoto {
     width: 450px;
@@ -138,7 +148,7 @@
 
 @media (max-width: 1200px) and (min-width: 1050px) {
   .eachphoto {
-    width: 400px;
+    width: 100%;
     height: 250px;
   }
   .subpart {
@@ -160,7 +170,7 @@
 
 @media (max-width: 1050px) and (min-width: 901px) {
   .eachphoto {
-    width: 400px;
+    width: 100%;
     height: 250px;
   }
   .imagewrapper {
@@ -199,7 +209,6 @@
     height: 200px;
   }
   .photoswrapper {
-    width: 100%;
     height: 500px;
   }
   .readinfo,
@@ -235,7 +244,6 @@
     width: 260px;
   }
   .photoswrapper {
-    width: 100%;
     height: 450px;
   }
   .newwrapper {
@@ -263,7 +271,7 @@
 
 @media (max-width: 650px) and (min-width: 400px) {
   .eachphoto {
-    width: 400px;
+    width: 100%;
     height: 200px;
   }
   .imagewrapper {
@@ -299,10 +307,6 @@
   .headertxt {
     width: 150px;
     height: 35px;
-    font-size: 12px;
-  }
-  .latest {
-    font-size: 20px;
   }
 }
 
@@ -319,7 +323,6 @@
     width: 280px;
   }
   .photoswrapper {
-    width: 100%;
     height: 700px;
   }
   .readinfo,
@@ -364,7 +367,6 @@
     width: 160px;
   }
   .photoswrapper {
-    width: 100%;
     height: 700px;
   }
   .readinfo,
