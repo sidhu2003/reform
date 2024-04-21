@@ -1,6 +1,7 @@
 .welcome_page_container {
   position: relative;
   height: fit-content;
+  min-height: calc(100vh - 80px);
   width: 100vw;
   background-size: cover;
   background-position: center;

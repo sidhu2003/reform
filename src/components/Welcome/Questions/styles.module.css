@@ -1,6 +1,7 @@
 .question_container {
   width: 80%;
   height: fit-content;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
