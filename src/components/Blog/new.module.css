@@ -2,9 +2,8 @@
 
 .wrapper {
   width: 100%;
-  overflow: hidden;
   height: fit-content;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .headertxt {
   width: fit-content;
@@ -17,7 +16,7 @@
 }
 .photoswrapper {
   height: fit-content;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -27,7 +26,6 @@
 .imagewrapper {
   position: relative;
   height: 280px;
-  width: 200px;
 }
 .subname {
   position: absolute;
@@ -51,7 +49,6 @@
 }
 .photo {
   height: 100%;
-  width: 100%;
 }
 .newwrapper {
   margin-top: 50px;
@@ -143,7 +140,6 @@
 
 @media (max-width: 1200px) and (min-width: 1050px) {
   .eachphoto {
-    width: 100%;
     height: 250px;
   }
   .subpart {
@@ -165,7 +161,6 @@
 
 @media (max-width: 1050px) and (min-width: 901px) {
   .eachphoto {
-    width: 100%;
     height: 250px;
   }
   .imagewrapper {
@@ -174,9 +169,6 @@
 
   .subpart {
     height: 250px;
-  }
-  .photoswrapper {
-    width: 90%;
   }
   .readinfo,
   .subtext,
@@ -194,7 +186,6 @@
 
 @media (max-width: 901px) and (min-width: 765px) {
   .eachphoto {
-    width: 350px;
     height: 200px;
   }
   .imagewrapper {
@@ -202,9 +193,6 @@
   }
   .subpart {
     height: 200px;
-  }
-  .photoswrapper {
-    height: 500px;
   }
   .readinfo,
   .subtext,
@@ -227,22 +215,9 @@
 }
 
 @media (max-width: 765px) and (min-width: 650px) {
-  .eachphoto {
-    width: 320px;
-    height: 160px;
-  }
-  .imagewrapper {
-    height: 160px;
-  }
   .subpart {
     height: 160px;
     width: 260px;
-  }
-  .photoswrapper {
-    height: 450px;
-  }
-  .newwrapper {
-    height: 500px;
   }
   .readinfo,
   .subtext,
@@ -266,7 +241,6 @@
 
 @media (max-width: 650px) and (min-width: 400px) {
   .eachphoto {
-    width: 100%;
     height: 200px;
   }
   .imagewrapper {
@@ -275,9 +249,6 @@
   .subpart {
     height: 200px;
     width: 280px;
-  }
-  .photoswrapper {
-    width: 100%;
   }
   .readinfo,
   .subtext,
@@ -311,9 +282,6 @@
     height: 160px;
     width: 280px;
   }
-  .photoswrapper {
-    height: 700px;
-  }
   .readinfo,
   .subtext,
   .text,
@@ -335,16 +303,7 @@
 }
 
 @media (max-width: 350px) {
-  .headertxt {
-    width: 140px;
-    height: 32px;
-    font-size: 11px;
-  }
-  .latest {
-    font-size: 16px;
-  }
   .eachphoto {
-    width: 250px;
     height: 160px;
   }
   .imagewrapper {
@@ -354,9 +313,6 @@
   .subpart {
     height: 160px;
     width: 160px;
-  }
-  .photoswrapper {
-    height: 700px;
   }
   .readinfo,
   .subtext,

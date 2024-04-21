@@ -50,9 +50,6 @@ export default function Home() {
         <section id="about">
           <About />
         </section>
-        <section id="blog">
-          <Blogs />
-        </section>
         <section id="services">
           <Services />
         </section>
@@ -60,6 +57,9 @@ export default function Home() {
           <Testmonials />
         </section>
         <Partner />
+        <section id="blog">
+          <Blogs />
+        </section>
         <section id="contact">
           <ContactUs />
         </section>

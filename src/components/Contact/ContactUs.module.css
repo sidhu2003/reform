@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 auto;
   padding: 20px;
   background-image: url("./contactbg.png");
   margin-bottom: 20px;
@@ -192,7 +191,7 @@ p {
 @media screen and (min-width: 769px) {
   .contactus {
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
   }
 
   .details {
