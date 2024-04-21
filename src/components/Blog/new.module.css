@@ -4,6 +4,7 @@
   width: 100%;
   height: fit-content;
   margin-bottom: 70px;
+  overflow: hidden;
 }
 .headertxt {
   width: fit-content;
