@@ -100,13 +100,12 @@
 
 .right_container {
   width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px 60px;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -120,6 +119,7 @@
   .right_container {
     padding: 20px;
     width: 100%;
+    margin-bottom: 50px;
   }
   .welcome_text {
     font-size: 2.2rem;

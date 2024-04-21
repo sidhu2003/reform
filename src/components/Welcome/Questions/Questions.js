@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
+import { questions_list } from "./Questions_list";
 
 export default function Questions() {
+  const [currentQuestion, setCurrentQuestion] = useState(1);
   return (
     <div className={styles.question_container}>
-      <button className={styles.step_btn}>STEP 02</button>
+      <button className={styles.step_btn}>
+        STEP {currentQuestion < 10 ? "0" + currentQuestion : currentQuestion}
+      </button>
       <div className={styles.question}>
-        Are you or anyone else in your household in receipt of benefits? 
+        {questions_list[currentQuestion - 1].title}
       </div>
       <div className={styles.checkboxes}>
         <div className={styles.checkbox}>
@@ -21,37 +25,37 @@ export default function Questions() {
         <div className={styles.options_title}>
           Please select benefits from below: *
         </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Child Tax Credits
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Child Benefit
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> ESA (Income Related)
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Pensions Savings Credit
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Pension Guarantee Credit
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Working Tax Credit
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Universal Credit
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> JSA (Income Based)
-        </div>
-        <div className={styles.option}>
-          <input type="checkbox" name="option" /> Housing Benefits
-        </div>
+        {questions_list[currentQuestion - 1].options.map((option, index) => {
+          return (
+            <div className={styles.option} key={index}>
+              <input type="checkbox" name="option" /> {option}
+            </div>
+          );
+        })}
       </div>
       <div className={styles.buttons}>
-        <button className={styles.back_btn}>PREV STEP</button>
-        <button className={styles.next_btn}>NEXT STEP</button>
+        <button
+          onClick={() =>
+            setCurrentQuestion((prev) => {
+              if (prev > 1) return prev - 1;
+              return prev;
+            })
+          }
+          className={styles.back_btn}
+        >
+          PREV STEP
+        </button>
+        <button
+          className={styles.next_btn}
+          onClick={() =>
+            setCurrentQuestion((prev) => {
+              if (prev < questions_list.length) return prev + 1;
+              return prev;
+            })
+          }
+        >
+          NEXT STEP
+        </button>
       </div>
     </div>
   );
