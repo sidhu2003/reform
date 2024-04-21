@@ -104,3 +104,12 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%, 1% 85%);
   border-radius: 6px;
 }
+
+@media (max-width: 1000px) {
+  .checkboxes {
+    width: 100%;
+  }
+  .question_container {
+    padding: 10px;
+  }
+}
