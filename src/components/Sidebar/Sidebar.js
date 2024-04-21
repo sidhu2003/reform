@@ -4,7 +4,12 @@ import header_styles from "../Header/styles.module.css";
 
 export default function Sidebar() {
   function close_sidebar() {
-    document.getElementById("sidebar").style.display = "none";
+    setTimeout(() => {
+      document.getElementById("sidebar").style.display = "none";
+    }, 3000);
+    document
+      .getElementById("sidebar-container")
+      .classList.toggle(styles.open_sidebar_container);
     document
       .getElementsByClassName(header_styles.bar1)[0]
       .classList.toggle(header_styles.bar1_open);
@@ -21,7 +26,7 @@ export default function Sidebar() {
       className={styles.sidebar_overlay}
       onClick={() => close_sidebar()}
     >
-      <div className={styles.sidebar_container}>
+      <div id="sidebar-container" className={styles.sidebar_container}>
         <ul className={styles.header_list}>
           <li className={styles.active}>
             <a href="#welcome">Home</a>

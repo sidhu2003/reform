@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import logo from "./logo.png";
 import phone from "./phone-call.svg";
 import white_logo from "./white_logo.png";
+import sidebar_styles from "../Sidebar/styles.module.css";
 
 export default function Header() {
   function changeLocation(id) {
@@ -14,8 +15,20 @@ export default function Header() {
   function toogle_sidebar() {
     const sidebar = document.getElementById("sidebar");
     if (sidebar.style.display === "block") {
-      sidebar.style.display = "none";
-    } else sidebar.style.display = "block";
+      setTimeout(() => {
+        sidebar.style.display = "none";
+      }, 300);
+      document
+        .getElementById("sidebar-container")
+        .classList.toggle(sidebar_styles.open_sidebar_container);
+    } else {
+      sidebar.style.display = "block";
+      setTimeout(() => {
+        document
+          .getElementById("sidebar-container")
+          .classList.toggle(sidebar_styles.open_sidebar_container);
+      }, 50);
+    }
     document
       .getElementsByClassName(styles.bar1)[0]
       .classList.toggle(styles.bar1_open);

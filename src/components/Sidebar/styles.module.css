@@ -12,9 +12,13 @@
   right: 0%;
   top: 0%;
   height: 100%;
-  width: 80%;
+  width: 0%;
   background-color: #fff;
-  transition: 0.5 all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.open_sidebar_container {
+  width: 80%;
 }
 
 .header_list {
