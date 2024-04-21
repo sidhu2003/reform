@@ -6,7 +6,7 @@ export default function Sidebar() {
   function close_sidebar() {
     setTimeout(() => {
       document.getElementById("sidebar").style.display = "none";
-    }, 3000);
+    }, 300);
     document
       .getElementById("sidebar-container")
       .classList.toggle(styles.open_sidebar_container);
