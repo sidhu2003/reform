@@ -51,7 +51,7 @@
 }
 
 .hr_line {
-  height: 40px;
+  height: 30px;
   width: 3px;
   border-radius: 8px;
   background-color: #cccccc;
@@ -106,8 +106,9 @@
   padding: 12px 30px;
   border: none;
   background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
+  background-color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%, 1% 85%);
   border-radius: 6px;
 }
