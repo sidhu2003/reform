@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <div id="header" className={styles.header}>
       <div className={styles.logo}>
-        <img src={logo} alt="logo" />
+        <img className={styles.logo_img} src={logo} alt="logo" />
       </div>
       <div className={styles.white_logo}>
         <img src={white_logo} alt="logo" />

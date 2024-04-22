@@ -24,6 +24,11 @@
   display: none;
 }
 
+.logo_img {
+  width: 160px;
+  height: auto;
+}
+
 .header a {
   text-decoration: none;
   color: black;

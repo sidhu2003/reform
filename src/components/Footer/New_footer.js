@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import logo from "./footerimages/reform.jpg";
+import logo from "./footerimages/reform.png";
 import fb from "./footerimages/facebook.svg";
 import twitter from "./footerimages/twitter.svg";
 import linkedin from "./footerimages/linkedin.svg";

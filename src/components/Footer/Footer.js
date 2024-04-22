@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./footer.module.css";
-import Reform from "./footerimages/reform.jpg";
+import Reform from "./footerimages/reform.png";
 const Footer = () => {
   return (
     <div className={Styles.footer}>
