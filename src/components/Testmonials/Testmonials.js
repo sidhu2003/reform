@@ -49,7 +49,7 @@ export default function Testmonials() {
           <div className={styles.quote}>
             <img src={quote} alt="quote" />
           </div>
-          <div className={`${styles.feedback} ${styles.active}`}>
+          <div className={`${styles.feedback}`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores et quas molestias excepturi sint occaecati.
