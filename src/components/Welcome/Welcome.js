@@ -15,9 +15,12 @@ export default function Welcome() {
         <div className={styles.sub_text}>
           <div className={styles.hr_line}></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            Reform your energy costs with our expert installations of efficient
+            and renewable heating systems, solar panels, and insulation. At
+            Reform, we navigate the complexities of UK energy grants to secure
+            the best funding and benefits for you. With our expertise, we ensure
+            your home is not just comfortable but also economical. Start your
+            journey to smarter energy usage with Reform today!
           </p>
         </div>
         <button className={styles.contact_btn}>TALK TO US</button>
