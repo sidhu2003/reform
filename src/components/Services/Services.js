@@ -9,14 +9,35 @@ import image6 from "./Images/place your image (5).png";
 
 export default function Services() {
   function setActiveElement(id) {
-    if (document.getElementsByClassName(styles.active).length !== 0)
-      document
-        .getElementsByClassName(styles.active)[0]
-        .classList.remove(styles.active);
-    document.getElementById(id).classList.add(styles.active);
+    document.getElementById("service-1").classList.remove(styles.active);
+    document.getElementById("service-2").classList.remove(styles.active);
+    document.getElementById("service-3").classList.remove(styles.active);
+    document.getElementById("service-4").classList.remove(styles.active);
+    document.getElementById("service-5").classList.remove(styles.active);
+    document.getElementById("service-6").classList.remove(styles.active);
+    document.getElementById(id).classList.add(styles.active_ele);
   }
+
+  function makeAllActive() {
+    document.getElementById("service-1").classList.remove(styles.active_ele);
+    document.getElementById("service-2").classList.remove(styles.active_ele);
+    document.getElementById("service-3").classList.remove(styles.active_ele);
+    document.getElementById("service-4").classList.remove(styles.active_ele);
+    document.getElementById("service-5").classList.remove(styles.active_ele);
+    document.getElementById("service-6").classList.remove(styles.active_ele);
+    document.getElementById("service-1").classList.add(styles.active);
+    document.getElementById("service-2").classList.add(styles.active);
+    document.getElementById("service-3").classList.add(styles.active);
+    document.getElementById("service-4").classList.add(styles.active);
+    document.getElementById("service-5").classList.add(styles.active);
+    document.getElementById("service-6").classList.add(styles.active);
+  }
+
   return (
-    <div className={styles.testimonials_container}>
+    <div
+      onMouseOut={() => makeAllActive()}
+      className={styles.testimonials_container}
+    >
       <div className={styles.label}>OUR SERVICES</div>
       <h2 className={styles.title}>Our Services</h2>
       <div className={styles.services}>

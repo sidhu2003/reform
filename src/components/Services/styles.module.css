@@ -98,19 +98,22 @@
   height: auto;
   transition: 0.5s ease-in-out;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.active {
-  /* transform: scale(1.1); */
-  z-index: 2;
-  cursor: pointer;
+.service:not(.active) {
+  filter: grayscale(90%);
+}
+
+.active_ele {
+  filter: grayscale(0%) !important;
 }
 
 .active img {
   border-radius: 10px;
 }
 
-.active .details {
+.active_ele .details {
   opacity: 1;
 }
 
