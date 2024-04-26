@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.css";
 import image1 from "./Images/place your image.png";
 import image2 from "./Images/place your image (1).png";
@@ -32,6 +32,15 @@ export default function Services() {
     document.getElementById("service-5").classList.add(styles.active);
     document.getElementById("service-6").classList.add(styles.active);
   }
+
+  useEffect(() => {
+    document.getElementById("service-1").classList.add(styles.active);
+    document.getElementById("service-2").classList.add(styles.active);
+    document.getElementById("service-3").classList.add(styles.active);
+    document.getElementById("service-4").classList.add(styles.active);
+    document.getElementById("service-5").classList.add(styles.active);
+    document.getElementById("service-6").classList.add(styles.active);
+  }, []);
 
   return (
     <div
