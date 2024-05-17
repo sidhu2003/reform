@@ -48,12 +48,9 @@ export default function Sidebar() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <button
-              onclick="window.location.href='tel:+442080409083'"
-              className={styles.contact_btn}
-            >
+            <a href="tel:+442080409083" className={styles.contact_btn}>
               <img src={phone} alt="phone" /> +44 208 040 9083
-            </button>
+            </a>
           </li>
         </ul>
       </div>

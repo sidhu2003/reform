@@ -28,7 +28,7 @@
   list-style: none;
 }
 
-.header_list a {
+.header_list a:not(.contact_btn) {
   text-decoration: none;
   font-size: 1.2rem;
   color: black;
@@ -53,9 +53,20 @@
   font-weight: 500;
   border: none;
   outline: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .contact_btn img {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.contact_btn a {
+  color: white !important;
+}
+
+.contact_btn:hover {
+  color: white !important;
 }

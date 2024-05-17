@@ -38,11 +38,6 @@
   color: white;
 }
 
-/* .header_scroll .contact_btn {
-  background-color: white;
-  color: #004652;
-} */
-
 .logo {
   height: 100%;
   display: flex;
@@ -96,7 +91,7 @@
   padding: 15px;
   background-color: #004652;
   border-radius: 10px;
-  color: white;
+  color: white !important;
   display: flex;
   align-items: center;
   justify-content: center;

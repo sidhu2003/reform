@@ -84,12 +84,9 @@ export default function Header() {
             Contact
           </a>
         </li>
-        <button
-          onclick="window.location.href='tel:+442080409083'"
-          className={styles.contact_btn}
-        >
+        <a href="tel:+442080409083" className={styles.contact_btn}>
           <img src={phone} alt="phone" /> +44 208 040 9083
-        </button>
+        </a>
       </ul>
       <div onClick={() => toogle_sidebar()} className={styles.menubar}>
         <div className={styles.bar1}></div>

@@ -14,11 +14,11 @@ export default function Questions() {
       </div>
       <div className={styles.checkboxes}>
         <div className={styles.checkbox}>
-          <input type="checkbox" id="yes" name="yes" value="yes" /> YES
+          <input type="radio" id="yes" name="yes/no" value="yes" /> YES
         </div>
         <div className={styles.hr_line}></div>
         <div className={styles.checkbox}>
-          <input type="checkbox" id="no" name="no" value="no" /> NO
+          <input type="radio" id="no" name="yes/no" value="no" /> NO
         </div>
       </div>
       <div className={styles.options}>
