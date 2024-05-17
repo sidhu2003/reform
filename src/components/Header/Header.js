@@ -84,7 +84,10 @@ export default function Header() {
             Contact
           </a>
         </li>
-        <button className={styles.contact_btn}>
+        <button
+          onclick="window.location.href='tel:+1234567890'"
+          className={styles.contact_btn}
+        >
           <img src={phone} alt="phone" /> (+123) 4567 8909
         </button>
       </ul>
