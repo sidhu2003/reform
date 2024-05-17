@@ -38,3 +38,24 @@
 .header_list a:hover {
   color: #074954;
 }
+
+.contact_btn {
+  padding: 15px;
+  width: 90%;
+  background-color: #004652;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Alebert Sans";
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+.contact_btn img {
+  margin-right: 10px;
+  cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import header_styles from "../Header/styles.module.css";
+import phone from "../Header/phone-call.svg";
 
 export default function Sidebar() {
   function close_sidebar() {
@@ -45,6 +46,14 @@ export default function Sidebar() {
           </li>
           <li>
             <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <button
+              onclick="window.location.href='tel:+442080409083'"
+              className={styles.contact_btn}
+            >
+              <img src={phone} alt="phone" /> +44 208 040 9083
+            </button>
           </li>
         </ul>
       </div>
