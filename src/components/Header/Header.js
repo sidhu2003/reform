@@ -66,14 +66,14 @@ export default function Header() {
             Services
           </a>
         </li>
-        <li id="header-testimonials">
+        {/* <li id="header-testimonials">
           <a
             onClick={(e) => changeLocation("header-testimonials")}
             href="#testimonials"
           >
             Grant Schemes
           </a>
-        </li>
+        </li> */}
         <li id="header-blog">
           <a onClick={(e) => changeLocation("header-blog")} href="#blog">
             News

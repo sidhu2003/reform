@@ -38,9 +38,9 @@ export default function Sidebar() {
           <li>
             <a href="#services">Services</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#testimonials">Grant Schemes</a>
-          </li>
+          </li> */}
           <li>
             <a href="#blog">News</a>
           </li>

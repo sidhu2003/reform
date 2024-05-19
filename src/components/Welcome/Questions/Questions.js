@@ -33,7 +33,7 @@ const node2 = new Node(
   node6,
   node3
 );
-const node1 = new Node("Are you a UK homeowner?", node2, node5);
+const node1 = new Node("Are you a UK homeowner?", node2, node2);
 
 const start = node1;
 
