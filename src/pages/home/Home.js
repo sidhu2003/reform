@@ -58,7 +58,7 @@ export default function Home() {
             <Services />
             <div className="divider_bar"></div>
           </section>
-          <section id="grant-services">
+          <section id="grant-schemes">
             <Grant_schemes />
             <div className="divider_bar"></div>
           </section>
