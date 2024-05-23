@@ -152,7 +152,19 @@ export default function Questions() {
       <div className={styles.question_container}>
         <div>
           <button className={styles.step_btn}>
-            STEP {path.length + 1} OF {questions_list.length}
+            STEP{" "}
+            {currentNode === node1
+              ? 1
+              : currentNode === node2
+              ? "2.a"
+              : currentNode === node3
+              ? "2.b"
+              : currentNode === node4
+              ? "2.c"
+              : currentNode === node5 || currentNode === node6
+              ? 3
+              : ""}{" "}
+            OF 3
           </button>
           {currentNode !== node5 && currentNode !== node6 && (
             <div className={styles.checkboxes}>

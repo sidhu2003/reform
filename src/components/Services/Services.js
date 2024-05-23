@@ -13,7 +13,6 @@ export default function Services() {
 
   useEffect(() => {
     if (query.get("service")) {
-      console.log(query.get("service"));
       const ele = document.getElementById(`service-${query.get("service")}`);
       document.getElementById("service-1").classList.remove(styles.active);
       document.getElementById("service-2").classList.remove(styles.active);
@@ -22,6 +21,10 @@ export default function Services() {
       document.getElementById("service-5").classList.remove(styles.active);
       document.getElementById("service-6").classList.remove(styles.active);
       ele.classList.add(styles.active_ele);
+      setQuery((prev) => {
+        prev.delete("service");
+        return prev;
+      });
     }
   }, [query]);
 

@@ -15,6 +15,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Privacy_policy_model from "../../components/Model/Privacyo_policy_model";
 import Terms_of_use_model from "../../components/Model/Terms_of_use_model";
 import { BrowserRouter, Router, Routes } from "react-router-dom";
+import Grant_services from "../../components/Grant_services/Grant_services";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -59,6 +60,10 @@ export default function Home() {
           </section>
           <section id="services">
             <Services />
+            <div className="divider_bar"></div>
+          </section>
+          <section id="grant-services">
+            <Grant_services />
             <div className="divider_bar"></div>
           </section>
           {/* <section id="testimonials">
