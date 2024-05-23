@@ -12,6 +12,7 @@ export default function Services() {
   const [query, setQuery] = useSearchParams();
 
   useEffect(() => {
+    if (query.get("service") === null) return;
     const ele = document.getElementById(`service-${query.get("service")}`);
     document.getElementById("service-1").classList.remove(styles.active);
     document.getElementById("service-2").classList.remove(styles.active);

@@ -148,7 +148,9 @@ export default function Questions() {
 
   return (
     <div className={styles.question_wrapper}>
-      <div className={styles.question}>{currentNode.question}</div>
+      <div className={styles.question}>
+        30-Second Check: See If You Qualify for a Free Home Improvement Grant!
+      </div>
       <div className={styles.question_container}>
         <div>
           <button className={styles.step_btn}>
@@ -166,6 +168,7 @@ export default function Questions() {
               : ""}{" "}
             OF 3
           </button>
+          <div className={styles.question}>{currentNode.question}</div>
           {currentNode !== node5 && currentNode !== node6 && (
             <div className={styles.checkboxes}>
               <div className={styles.checkbox}>

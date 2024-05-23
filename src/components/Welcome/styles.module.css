@@ -1,7 +1,7 @@
 .welcome_page_container {
   position: relative;
   height: fit-content;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh);
   width: 100vw;
   background-size: cover;
   background-position: center;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 80px 80px;
+  padding: 30px 80px;
   color: white;
   justify-content: center;
 }
@@ -113,7 +113,7 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 80px 80px;
+  padding: 30px 80px;
   color: white;
   justify-content: center;
 }
