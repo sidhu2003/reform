@@ -69,7 +69,7 @@ export default function Header() {
         <li id="header-testimonials">
           <a
             onClick={(e) => changeLocation("header-testimonials")}
-            href="#grant-services"
+            href="#grant-schemes"
           >
             Grant Schemes
           </a>

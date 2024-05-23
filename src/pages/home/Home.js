@@ -1,21 +1,17 @@
 import React, { useRef } from "react";
-import { useEffect } from "react";
 import Header from "../../components/Header/Header";
 import Welcome from "../../components/Welcome/Welcome";
-import Testmonials from "../../components/Testmonials/Testmonials";
 import Services from "../../components/Services/Services";
 import ContactUs from "../../components/Contact/ContactUs";
 import About from "../../components/About/About";
 import Blogs from "../../components/Blog/Blogs";
 import styles from "../../components/Header/styles.module.css";
-import Partner from "../../components/Partner/Partner";
-import Footer from "../../components/Footer/Footer";
 import New_footer from "../../components/Footer/New_footer";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Privacy_policy_model from "../../components/Model/Privacyo_policy_model";
 import Terms_of_use_model from "../../components/Model/Terms_of_use_model";
 import { BrowserRouter, Router, Routes } from "react-router-dom";
-import Grant_services from "../../components/Grant_services/Grant_services";
+import Grant_schemes from "../../components/Grant_schemes/Grant_schemes";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -63,7 +59,7 @@ export default function Home() {
             <div className="divider_bar"></div>
           </section>
           <section id="grant-services">
-            <Grant_services />
+            <Grant_schemes />
             <div className="divider_bar"></div>
           </section>
           {/* <section id="testimonials">
