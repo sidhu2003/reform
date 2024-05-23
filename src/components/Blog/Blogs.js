@@ -14,7 +14,6 @@ const Blogs = () => {
   return (
     <div className={Styles.wrapper}>
       <div className={Styles.headerwrapper}>
-        <div className={Styles.headertxt}>BLOGS & NEWS</div>
         <div className={Styles.latest}>Latest News Feeds</div>
       </div>
       <div className={Styles.newwrapper}>

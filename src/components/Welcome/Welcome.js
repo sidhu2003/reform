@@ -23,7 +23,9 @@ export default function Welcome() {
             journey to smarter energy usage with Reform today!
           </p>
         </div>
-        <button className={styles.contact_btn}>TALK TO US</button>
+        <a href="#contact" className={styles.contact_btn}>
+          TALK TO US
+        </a>
         <div className={styles.data}>
           <div className={styles.data_item}>
             12K+

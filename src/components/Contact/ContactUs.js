@@ -75,26 +75,33 @@ const ContactUs = () => {
   return (
     <div className={styles.contactus}>
       <div className={styles.leftContact}>
-        <button className={styles.contactUsBtn}>ABOUT US</button>
-        <div className={styles.contactTitle}>Contact With Us</div>
+        <div className={styles.contactTitle}>Contact Us</div>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard.
+          We are here to assist you with any inquiries or support you may need.
+          Our team is dedicated to providing exceptional service and prompt
+          responses. Whether you have a question about our services, need
+          technical assistance, or want to learn more about how we can help you
+          achieve your goals, please don't hesitate to reach out. We look
+          forward to connecting with you and helping you succeed.
         </p>
         <div className={styles.details}>
-          <div className={styles.center}>
+          <a href="tel:+442080409083" className={styles.center}>
             <IoCallOutline className={styles.contactIcon} />
-            +1-234-567-8900
-          </div>
-          <div className={styles.center}>
+            +44 208 040 9083
+          </a>
+          <a href="mailTo:support@reform-group.uk" className={styles.center}>
             <MdOutlineEmail className={styles.contactIcon} />
-            Loremipsom@gmail.com
-          </div>
-          <div className={styles.center}>
+            support@reform-group.uk
+          </a>
+          <a
+            href="https://www.google.com/maps/place/Temple+View,+High+St,+Templecombe+BA8+0JG,+UK/@50.9979328,-2.4206539,17z/data=!3m1!4b1!4m6!3m5!1s0x487237ce1f94da99:0xd27cb75370dc6adc!8m2!3d50.9979295!4d-2.415783!16s%2Fg%2F1th09w_g?entry=ttu"
+            target="_blank"
+            className={styles.center}
+          >
             <HiOutlineLocationMarker className={styles.contactIcon} />
-            1234 A Lorem Ipsum Street <br />
-            West Convina,CA 12345,U.S.
-          </div>
+            Templeview, High Street, Templecombe,
+            <br /> Somerset, BA8 0JG
+          </a>
         </div>
       </div>
       <div className={styles.rightContact}>

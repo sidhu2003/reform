@@ -7,7 +7,6 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className={styles["left-container"]}>
-        <button className={styles["abt-us"]}>ABOUT US</button>
         <div className={styles.title}>
           We Specialize In Quality Energy Solutions{" "}
         </div>
@@ -36,13 +35,12 @@ const About = () => {
         </div>
         <div className={styles["check-div"]}>
           <IoMdCheckmark className={styles["check-box"]} />
-          Outstanding Service
+          Outstanding service
         </div>
         <div className={styles["check-div"]}>
           <IoMdCheckmark className={styles["check-box"]} />
-          Professional and experienced Workers
+          Professional and experienced workers
         </div>
-        <button className={styles["readmore-btn"]}>READ MORE</button>
       </div>
       <div className={styles["right-container"]}>
         <img

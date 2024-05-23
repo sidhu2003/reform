@@ -6,8 +6,25 @@ import image3 from "./Images/place your image (2).png";
 import image4 from "./Images/place your image (3).png";
 import image5 from "./Images/place your image (4).png";
 import image6 from "./Images/place your image (5).png";
+import { useSearchParams } from "react-router-dom";
 
 export default function Services() {
+  const [query, setQuery] = useSearchParams();
+
+  useEffect(() => {
+    if (query.get("service")) {
+      console.log(query.get("service"));
+      const ele = document.getElementById(`service-${query.get("service")}`);
+      document.getElementById("service-1").classList.remove(styles.active);
+      document.getElementById("service-2").classList.remove(styles.active);
+      document.getElementById("service-3").classList.remove(styles.active);
+      document.getElementById("service-4").classList.remove(styles.active);
+      document.getElementById("service-5").classList.remove(styles.active);
+      document.getElementById("service-6").classList.remove(styles.active);
+      ele.classList.add(styles.active_ele);
+    }
+  }, [query]);
+
   function setActiveElement(id) {
     document.getElementById("service-1").classList.remove(styles.active);
     document.getElementById("service-2").classList.remove(styles.active);
@@ -47,7 +64,6 @@ export default function Services() {
       onMouseOut={() => makeAllActive()}
       className={styles.testimonials_container}
     >
-      <div className={styles.label}>OUR SERVICES</div>
       <h2 className={styles.title}>Our Services</h2>
       <div className={styles.services}>
         <div className={styles.service_block}>

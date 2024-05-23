@@ -22,12 +22,22 @@
   font-size: 0.9rem;
 }
 
+.section a {
+  text-decoration: none;
+}
+
 .section_title {
   font-weight: 700;
 }
 
 .footer_link {
   font-weight: 400;
+  text-decoration: none;
+  clear: white;
+}
+
+.footer_container a {
+  color: white;
 }
 
 .footer_link:hover {
@@ -52,6 +62,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {

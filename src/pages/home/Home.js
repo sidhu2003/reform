@@ -12,6 +12,9 @@ import Partner from "../../components/Partner/Partner";
 import Footer from "../../components/Footer/Footer";
 import New_footer from "../../components/Footer/New_footer";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Privacy_policy_model from "../../components/Model/Privacyo_policy_model";
+import Terms_of_use_model from "../../components/Model/Terms_of_use_model";
+import { BrowserRouter, Router, Routes } from "react-router-dom";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -31,40 +34,47 @@ export default function Home() {
 
   return (
     <div>
-      <Sidebar />
-      <Header />
-      <div
-        ref={scroll}
-        id="container"
-        onScroll={handleScroll}
-        style={{
-          marginTop: "90px",
-          height: "calc(100vh - 90px)",
-          overflow: "scroll",
-          scrollBehavior: "smooth",
-        }}
-      >
-        <section id="welcome">
-          <Welcome />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        {/* <section id="testimonials">
+      <BrowserRouter basename="/reform">
+        <Privacy_policy_model />
+        <Terms_of_use_model />
+        <Sidebar />
+        <Header />
+        <div
+          ref={scroll}
+          id="container"
+          onScroll={handleScroll}
+          style={{
+            marginTop: "90px",
+            height: "calc(100vh - 90px)",
+            overflow: "scroll",
+            scrollBehavior: "smooth",
+          }}
+        >
+          <section id="welcome">
+            <Welcome />
+          </section>
+          <section id="about">
+            <About />
+            <div className="divider_bar"></div>
+          </section>
+          <section id="services">
+            <Services />
+            <div className="divider_bar"></div>
+          </section>
+          {/* <section id="testimonials">
           <Testmonials />
         </section> */}
-        <Partner />
-        <section id="blog">
-          <Blogs />
-        </section>
-        <section id="contact">
-          <ContactUs />
-        </section>
-        <New_footer />
-      </div>
+          {/* <Partner /> */}
+          <section id="blog">
+            <Blogs />
+            <div className="divider_bar"></div>
+          </section>
+          <section id="contact">
+            <ContactUs />
+          </section>
+          <New_footer />
+        </div>
+      </BrowserRouter>
     </div>
   );
 }

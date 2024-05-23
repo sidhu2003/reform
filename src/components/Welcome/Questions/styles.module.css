@@ -1,7 +1,6 @@
 .question_container {
-  width: 80%;
   height: fit-content;
-  min-height: 500px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +11,14 @@
   border-radius: 10px;
   border: 1.2px solid #004652;
   background-color: rgba(0, 70, 82, 0.2);
+}
+
+.question_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  margin-top: 50px;
 }
 
 .question_container button {
@@ -28,7 +35,7 @@
 }
 
 .question {
-  margin-top: 30px;
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -125,7 +132,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .checkboxes {
     width: 100%;
   }
@@ -143,6 +150,7 @@
 }
 
 .field {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -161,8 +169,9 @@
   border: none;
   border-radius: 8px;
   padding: 8px;
-  width: 150px;
+  margin: 3px;
   font-size: 1rem;
+  width: 95% !important;
 }
 
 .field input:last-child {

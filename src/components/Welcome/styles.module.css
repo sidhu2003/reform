@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: start;
 }
 
 .backdrop_img {
@@ -27,7 +28,7 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 80px;
+  padding: 80px 80px;
   color: white;
   justify-content: center;
 }
@@ -82,6 +83,7 @@
   border-top-right-radius: 20px;
   background-color: #7ad1a1;
   clip-path: polygon(85% 1%, 100% 40%, 100% 100%, 0 99%, 0 0);
+  text-decoration: none;
 }
 
 .data {
@@ -105,13 +107,15 @@
 }
 
 .right_container {
+  position: relative;
   width: 50%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  text-align: start;
+  padding: 80px 80px;
+  color: white;
   justify-content: center;
-  align-items: center;
-  padding: 40px 60px;
 }
 
 @media (max-width: 1200px) {

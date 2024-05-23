@@ -9,10 +9,13 @@ const Footer = () => {
           <div className={Styles.first}>
             <img src={Reform} className={Styles.reform}></img>
             <div className={Styles.content}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              At Reform, we are committed to delivering innovative and
+              sustainable solutions for all your energy needs. Our expert team
+              is dedicated to providing exceptional service and ensuring
+              customer satisfaction. Join us in our mission to create a greener,
+              more efficient future. For any inquiries or to learn more about
+              our services, connect with us through our social media channels or
+              contact information provided.
             </div>
             <div className={Styles.logowrappers}>
               <svg

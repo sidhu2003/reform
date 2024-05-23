@@ -147,169 +147,149 @@ export default function Questions() {
   };
 
   return (
-    <div className={styles.question_container}>
-      <div>
-        <button className={styles.step_btn}>
-          STEP {path.length + 1} OF {questions_list.length}
-        </button>
-        <div className={styles.question}>{currentNode.question}</div>
-        {currentNode !== node5 && currentNode !== node6 && (
-          <div className={styles.checkboxes}>
-            <div className={styles.checkbox}>
-              <input
-                type="radio"
-                name="answer"
-                value="yes"
-                checked={answers[currentNode.question] === "yes"}
-                onChange={handleChange}
-              />{" "}
-              Yes
-            </div>
-            <div className={styles.hr_line}></div>
-            <div className={styles.checkbox}>
-              <input
-                type="radio"
-                name="answer"
-                value="no"
-                checked={answers[currentNode.question] === "no"}
-                onChange={handleChange}
-              />{" "}
-              No
-            </div>
-          </div>
-        )}
-      </div>
-      {currentNode === node6 && (
-        <div className={styles.form}>
-          <div className={styles.field}>
-            <label>
-              First Name <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>
-              Last Name <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Last Name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>
-              Email <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>
-              Phone <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Phone"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>
-              Address Line 1 <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Address Line 1"
-              value={address_line_1}
-              onChange={(e) => setAddress_line_1(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>Address Line 2</label>
-            <input
-              type="text"
-              placeholder="Address Line 2"
-              value={address_line_2}
-              onChange={(e) => setAddress_line_2(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>
-              City <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="City"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>
-              Postcode <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Postcode"
-              value={postcode}
-              onChange={(e) => setPostcode(e.target.value)}
-            />
-          </div>
-          <div className={styles.field}>
-            <label>Best Time To Call</label>
-            <input
-              type="text"
-              placeholder="Best Time To Call"
-              value={best_time_to_call}
-              onChange={(e) => setBest_time_to_call(e.target.value)}
-            />
-          </div>
-        </div>
-      )}
-      <div className={styles.buttons}>
-        {currentNode !== node1 && (
-          <button onClick={handlePrev} className={styles.back_btn}>
-            PREV STEP
+    <div className={styles.question_wrapper}>
+      <div className={styles.question}>{currentNode.question}</div>
+      <div className={styles.question_container}>
+        <div>
+          <button className={styles.step_btn}>
+            STEP {path.length + 1} OF {questions_list.length}
           </button>
-        )}
-        {currentNode !== node6 && currentNode !== node5 && (
-          <button className={styles.next_btn} onClick={handleNext}>
-            NEXT STEP
-          </button>
-        )}
-        {currentNode === node6 && (
-          <button className={styles.next_btn} onClick={handleSubmit}>
-            {loading && (
-              <div style={{ marginRight: "10px" }}>
-                <Oval
-                  height={15}
-                  width={15}
-                  color="#fff"
-                  wrapperStyle={{}}
-                  wrapperClass=""
-                  visible={true}
-                  ariaLabel="oval-loading"
-                  secondaryColor="#7ad1a1"
-                  strokeWidth={2}
-                  strokeWidthSecondary={2}
-                />
+          {currentNode !== node5 && currentNode !== node6 && (
+            <div className={styles.checkboxes}>
+              <div className={styles.checkbox}>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="yes"
+                  checked={answers[currentNode.question] === "yes"}
+                  onChange={handleChange}
+                />{" "}
+                Yes
               </div>
-            )}
-            SUBMIT
-          </button>
+              <div className={styles.hr_line}></div>
+              <div className={styles.checkbox}>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="no"
+                  checked={answers[currentNode.question] === "no"}
+                  onChange={handleChange}
+                />{" "}
+                No
+              </div>
+            </div>
+          )}
+        </div>
+        {currentNode === node6 && (
+          <div className={styles.form}>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="First Name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="Last Name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="Phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="Address Line 1"
+                value={address_line_1}
+                onChange={(e) => setAddress_line_1(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="Address Line 2"
+                value={address_line_2}
+                onChange={(e) => setAddress_line_2(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="City"
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <input
+                type="text"
+                placeholder="Postcode"
+                value={postcode}
+                onChange={(e) => setPostcode(e.target.value)}
+              />
+            </div>
+            <div className={styles.field}>
+              <label>Best Time To Call</label>
+              <input
+                type="text"
+                placeholder="Best Time To Call"
+                value={best_time_to_call}
+                onChange={(e) => setBest_time_to_call(e.target.value)}
+              />
+            </div>
+          </div>
         )}
+        <div className={styles.buttons}>
+          {currentNode !== node1 && (
+            <button onClick={handlePrev} className={styles.back_btn}>
+              PREV STEP
+            </button>
+          )}
+          {currentNode !== node6 && currentNode !== node5 && (
+            <button className={styles.next_btn} onClick={handleNext}>
+              NEXT STEP
+            </button>
+          )}
+          {currentNode === node6 && (
+            <button className={styles.next_btn} onClick={handleSubmit}>
+              {loading && (
+                <div style={{ marginRight: "10px" }}>
+                  <Oval
+                    height={15}
+                    width={15}
+                    color="#fff"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel="oval-loading"
+                    secondaryColor="#7ad1a1"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
+                  />
+                </div>
+              )}
+              SUBMIT
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

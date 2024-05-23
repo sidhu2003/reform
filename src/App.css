@@ -16,3 +16,20 @@
     margin-top: 70px;
   }
 }
+
+.divider_bar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #004652;
+  justify-content: space-around;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.footer_link {
+  cursor: pointer;
+}

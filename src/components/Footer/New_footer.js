@@ -5,8 +5,19 @@ import fb from "./footerimages/facebook.svg";
 import twitter from "./footerimages/twitter.svg";
 import linkedin from "./footerimages/linkedin.svg";
 import airb from "./footerimages/airb.svg";
+import { useSearchParams } from "react-router-dom";
 
 export default function New_footer() {
+  const [query, setQuery] = useSearchParams();
+  document.addEventListener("click", function (event) {
+    if (event.target.matches(".footer_link")) {
+      event.preventDefault();
+      const servicesElement = document.getElementById("services");
+      if (servicesElement) {
+        servicesElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  });
   return (
     <div className={styles.footer_container}>
       <div className={styles.sections}>
@@ -15,10 +26,13 @@ export default function New_footer() {
             <img src={logo} alt="logo" className={styles.logo}></img>
           </div>
           <div className={styles.section}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            At Reform, we are committed to delivering innovative and sustainable
+            solutions for all your energy needs. Our expert team is dedicated to
+            providing exceptional service and ensuring customer satisfaction.
+            Join us in our mission to create a greener, more efficient future.
+            For any inquiries or to learn more about our services, connect with
+            us through our social media channels or contact information
+            provided.
           </div>
           <div className={styles.socials}>
             <img src={fb} alt="fb" className={styles.social_icon}></img>
@@ -37,32 +51,110 @@ export default function New_footer() {
         </div>
         <div className={styles.section}>
           <div className={styles.section_title}>Quick Links</div>
-          <div className={styles.footer_link}>Home</div>
-          <div className={styles.footer_link}>About Us</div>
-          <div className={styles.footer_link}>Services</div>
-          <div className={styles.footer_link}>Grant Services</div>
-          <div className={styles.footer_link}>News</div>
-          <div className={styles.footer_link}>Contact</div>
+          <a href="#welcome" className={styles.footer_link}>
+            Home
+          </a>
+          <a href="#about" className={styles.footer_link}>
+            About Us
+          </a>
+          <a href="#service" className={styles.footer_link}>
+            Services
+          </a>
+          <a href="#testimonials" className={styles.footer_link}>
+            Grant Services
+          </a>
+          <a href="#blog" className={styles.footer_link}>
+            News
+          </a>
+          <a href="#contact" className={styles.footer_link}>
+            Contact
+          </a>
         </div>
         <div className={styles.section}>
           <div className={styles.section_title}>Services</div>
-          <div className={styles.footer_link}>Heat Contol</div>
-          <div className={styles.footer_link}>Air Source</div>
-          <div className={styles.footer_link}>Solar Panel</div>
-          <div className={styles.footer_link}>Electric Storage Heater</div>
-          <div className={styles.footer_link}>Under Floor Insulation</div>
-          <div className={styles.footer_link}>Boiler Installation</div>
+          <div
+            onClick={() => {
+              setQuery((prev) => {
+                prev.set("service", 1);
+                return prev;
+              });
+            }}
+            class="footer_link"
+          >
+            Heat Control
+          </div>
+          <div
+            onClick={() => {
+              setQuery((prev) => {
+                prev.set("service", 2);
+                return prev;
+              });
+            }}
+            class="footer_link"
+          >
+            Air Source
+          </div>
+          <div
+            onClick={() => {
+              setQuery((prev) => {
+                prev.set("service", 3);
+                return prev;
+              });
+            }}
+            class="footer_link"
+          >
+            Solar Panel
+          </div>
+          <div
+            onClick={() => {
+              setQuery((prev) => {
+                prev.set("service", 4);
+                return prev;
+              });
+            }}
+            class="footer_link"
+          >
+            Electric Storage Heater
+          </div>
+          <div
+            onClick={() => {
+              setQuery((prev) => {
+                prev.set("service", 5);
+                return prev;
+              });
+            }}
+            class="footer_link"
+          >
+            Under Floor Insulation
+          </div>
+          <div
+            onClick={() => {
+              setQuery((prev) => {
+                prev.set("service", 6);
+                return prev;
+              });
+            }}
+            class="footer_link"
+          >
+            Boiler Installation
+          </div>
         </div>
         <div className={styles.section}>
           <div className={styles.section_title}>Contact Info</div>
           <div className={styles.contact_info}>
-            <b>phone</b>: +1-234-567-8900
+            <b>phone</b>:{" "}
+            <a href="tel:+442080409083" className={styles.center}>
+              +44 208 040 9083
+            </a>
           </div>
           <div className={styles.contact_info}>
             <b>Fax</b>: 1(234)567-8900
           </div>
           <div className={styles.contact_info}>
-            <b>Email</b>: info@loremipsum.com
+            <b>Email</b>:{" "}
+            <a href="mailTo:support@reform-group.uk" className={styles.center}>
+              support@reform-group.uk
+            </a>
           </div>
           <div className={styles.contact_info}>
             <svg
@@ -79,7 +171,16 @@ export default function New_footer() {
                 fill="#7AD1A1"
               />
             </svg>
-            1234 A Lorem ipsum street West Covina ,CA 12345,U.S
+            <a
+              href="https://www.google.com/maps/place/Temple+View,+High+St,+Templecombe+BA8+0JG,+UK/@50.9979328,-2.4206539,17z/data=!3m1!4b1!4m6!3m5!1s0x487237ce1f94da99:0xd27cb75370dc6adc!8m2!3d50.9979295!4d-2.415783!16s%2Fg%2F1th09w_g?entry=ttu"
+              target="_blank"
+              className={styles.center}
+            >
+              <span style={{ marginLeft: "10px" }}>
+                Templeview, High Street, Templecombe,
+                <br /> Somerset, BA8 0JG
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -89,7 +190,25 @@ export default function New_footer() {
           2024© All right reserved by{" "}
           <span style={{ color: "#7AD1A1" }}>REFORM</span>
         </div>
-        <div className={styles.term}>Terms of Use | Privacy Policy</div>
+        <div className={styles.term}>
+          <span
+            onClick={() => {
+              document.getElementById("terms_of_use_model").style.display =
+                "flex";
+            }}
+          >
+            Terms of Use
+          </span>{" "}
+          |{" "}
+          <span
+            onClick={() => {
+              document.getElementById("privacy_policy_model").style.display =
+                "flex";
+            }}
+          >
+            Privacy Policy
+          </span>
+        </div>
       </div>
     </div>
   );
