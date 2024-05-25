@@ -66,7 +66,7 @@ export default function Header() {
             Services
           </a>
         </li>
-        <li id="header-testimonials">
+        {/* <li id="header-testimonials">
           <a
             onClick={(e) => changeLocation("header-testimonials")}
             href="#grant-schemes"
@@ -78,7 +78,7 @@ export default function Header() {
           <a onClick={(e) => changeLocation("header-blog")} href="#blog">
             News
           </a>
-        </li>
+        </li> */}
         <li id="header-contact">
           <a onClick={(e) => changeLocation("header-contact")} href="#contact">
             Contact

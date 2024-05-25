@@ -58,18 +58,18 @@ export default function Home() {
             <Services />
             <div className="divider_bar"></div>
           </section>
-          <section id="grant-schemes">
+          {/* <section id="grant-schemes">
             <Grant_schemes />
             <div className="divider_bar"></div>
-          </section>
+          </section> */}
           {/* <section id="testimonials">
           <Testmonials />
         </section> */}
           {/* <Partner /> */}
-          <section id="blog">
+          {/* <section id="blog">
             <Blogs />
             <div className="divider_bar"></div>
-          </section>
+          </section> */}
           <section id="contact">
             <ContactUs />
           </section>

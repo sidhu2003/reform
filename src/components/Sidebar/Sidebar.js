@@ -38,12 +38,12 @@ export default function Sidebar() {
           <li>
             <a href="#services">Services</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#grant-schemes">Grant Schemes</a>
           </li>
           <li>
             <a href="#blog">News</a>
-          </li>
+          </li> */}
           <li>
             <a href="#contact">Contact</a>
           </li>
