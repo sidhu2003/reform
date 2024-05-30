@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 80%;
+  width: 90%;
   margin-top: 50px;
 }
 
@@ -186,4 +186,15 @@
 
 .field:last-child {
   width: 100%;
+}
+
+.question_top_title {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.title {
+  display: inline-block;
+  font-weight: 900;
 }

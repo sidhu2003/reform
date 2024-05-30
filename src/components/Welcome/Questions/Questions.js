@@ -13,7 +13,7 @@ class Node {
 }
 
 const node6 = new Node(
-  "Congratulations! You’ve been pre-approved for a home improvement grant! To move forward, we need to determine if your property qualifies as well. Please provide the details below, and we’ll review your property. Once that’s complete, we’ll reach out to discuss the next steps."
+  "<b>Congratulations!</b> You’ve been pre-approved for a home improvement grant! To move forward, we need to determine if your property qualifies as well. Please provide the details below, and we’ll review your property. Once that’s complete, we’ll reach out to discuss the next steps."
 );
 const node5 = new Node(
   "Thank you for your interest in our home improvement grant. Unfortunately, it appears you do not qualify for the grant at this time. However, we have other fantastic options available, including flexible financing and special offers, to help you achieve your home improvement goals. Please provide your details below, and we will get in touch to discuss the best options for you."
@@ -148,8 +148,9 @@ export default function Questions() {
 
   return (
     <div className={styles.question_wrapper}>
-      <div className={styles.question}>
-        30-Second Check: See If You Qualify for a Free Home Improvement Grant!
+      <div className={styles.question_top_title}>
+        <span className={styles.title}>30-Second Check:</span> See If You
+        Qualify for a Free Home Improvement Grant!
       </div>
       <div className={styles.question_container}>
         <div>
@@ -158,17 +159,20 @@ export default function Questions() {
             {currentNode === node1
               ? 1
               : currentNode === node2
-              ? "2.a"
+              ? "2A"
               : currentNode === node3
-              ? "2.b"
+              ? "2B"
               : currentNode === node4
-              ? "2.c"
+              ? "2C"
               : currentNode === node5 || currentNode === node6
               ? 3
               : ""}{" "}
             OF 3
           </button>
-          <div className={styles.question}>{currentNode.question}</div>
+          <div
+            dangerouslySetInnerHTML={{ __html: currentNode.question }}
+            className={styles.question}
+          ></div>
           {currentNode !== node5 && currentNode !== node6 && (
             <div className={styles.checkboxes}>
               <div className={styles.checkbox}>

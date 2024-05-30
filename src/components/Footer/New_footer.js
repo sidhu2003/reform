@@ -34,7 +34,7 @@ export default function New_footer() {
             us through our social media channels or contact information
             provided.
           </div>
-          <div className={styles.socials}>
+          {/* <div className={styles.socials}>
             <img src={fb} alt="fb" className={styles.social_icon}></img>
             <img
               src={twitter}
@@ -47,7 +47,7 @@ export default function New_footer() {
               className={styles.social_icon}
             ></img>
             <img src={airb} alt="airbnb" className={styles.social_icon}></img>
-          </div>
+          </div> */}
         </div>
         <div className={styles.section}>
           <div className={styles.section_title}>Quick Links</div>
@@ -142,13 +142,10 @@ export default function New_footer() {
         <div className={styles.section}>
           <div className={styles.section_title}>Contact Info</div>
           <div className={styles.contact_info}>
-            <b>phone</b>:{" "}
+            <b>Phone</b>:{" "}
             <a href="tel:+442080409083" className={styles.center}>
               +44 208 040 9083
             </a>
-          </div>
-          <div className={styles.contact_info}>
-            <b>Fax</b>: 1(234)567-8900
           </div>
           <div className={styles.contact_info}>
             <b>Email</b>:{" "}

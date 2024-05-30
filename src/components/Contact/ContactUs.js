@@ -147,7 +147,7 @@ const ContactUs = () => {
           className={styles.textareaInput}
         ></textarea>
         <div className={styles.row2}>
-          {toggleOn ? (
+          {/* {toggleOn ? (
             <IoToggle className={styles.toggleon} onClick={handleToggle} />
           ) : (
             <PiToggleLeftFill
@@ -156,9 +156,10 @@ const ContactUs = () => {
               }`}
               onClick={handleToggle}
             />
-          )}
+          )} */}
           <div className={styles.agree}>
-            I agree to the Terms and Conditions of this Website
+            <input type="checkbox" id="i-agree" />I agree to the Terms and
+            Conditions of this Website
           </div>
           <button
             className={`${styles.submitBtn} ${

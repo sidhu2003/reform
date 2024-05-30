@@ -74,7 +74,7 @@
 .contact_btn {
   color: black;
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
   border: none;
   padding: 15px 40px;
   background-color: transparent;
@@ -87,7 +87,7 @@
 }
 
 .data {
-  margin-top: 40px;
+  margin-top: 50px;
   border: 0px;
   display: flex;
   flex-direction: row;
