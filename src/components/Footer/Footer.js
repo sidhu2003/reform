@@ -106,8 +106,6 @@ const Footer = () => {
               <div className={Styles.home}>Home</div>
               <div className={Styles.aboutus}>About Us</div>
               <div className={Styles.services}>Services</div>
-              {/* <div className={Styles.grantservices}>Grant Services</div>
-              <div className={Styles.news}>News</div> */}
               <div className={Styles.contact}>Contact</div>
             </div>
           </div>

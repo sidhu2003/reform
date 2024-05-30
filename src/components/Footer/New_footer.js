@@ -60,12 +60,6 @@ export default function New_footer() {
           <a href="#service" className={styles.footer_link}>
             Services
           </a>
-          <a href="#grant-schemes" className={styles.footer_link}>
-            Grant Services
-          </a>
-          <a href="#blog" className={styles.footer_link}>
-            News
-          </a>
           <a href="#contact" className={styles.footer_link}>
             Contact
           </a>
