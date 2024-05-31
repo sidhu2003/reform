@@ -12,6 +12,7 @@ import Privacy_policy_model from "../../components/Model/Privacyo_policy_model";
 import Terms_of_use_model from "../../components/Model/Terms_of_use_model";
 import { BrowserRouter, Router, Routes } from "react-router-dom";
 import Grant_schemes from "../../components/Grant_schemes/Grant_schemes";
+import Thank_you_model from "../../components/Model/thank_you_model";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -34,6 +35,7 @@ export default function Home() {
       <BrowserRouter>
         <Privacy_policy_model />
         <Terms_of_use_model />
+        <Thank_you_model />
         <Sidebar />
         <Header />
         <div

@@ -56,6 +56,7 @@ export default function Questions() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
+    alert(best_time_to_call);
     setLoading(true);
     if (
       firstName === "" ||
@@ -64,7 +65,8 @@ export default function Questions() {
       phone === "" ||
       postcode === "" ||
       address_line_1 === "" ||
-      city === ""
+      city === "" ||
+      best_time_to_call === ""
     ) {
       alert("Please fill in all the required fields.");
       setLoading(false);
@@ -100,7 +102,7 @@ export default function Questions() {
         mode: "no-cors",
       })
         .then(() => {
-          alert("Form submitted successfully!");
+          document.getElementById("thank_you_model").style.display = "flex";
           setLoading(false);
         })
         .catch((error) => {
@@ -149,7 +151,7 @@ export default function Questions() {
   return (
     <div className={styles.question_wrapper}>
       <div className={styles.question_top_title}>
-        <span className={styles.title}>30-Second Check:</span> See If You
+        <span className={styles.title}>30 SECOND CHECK:</span> See If You
         Qualify for a Free Home Improvement Grant!
       </div>
       <div className={styles.question_container}>
@@ -266,13 +268,24 @@ export default function Questions() {
               />
             </div>
             <div className={styles.field}>
-              <label>Best Time To Call</label>
-              <input
-                type="text"
-                placeholder="Best Time To Call"
+              <select
                 value={best_time_to_call}
-                onChange={(e) => setBest_time_to_call(e.target.value)}
-              />
+                onChange={(e) => {
+                  if (e.target.value !== "")
+                    setBest_time_to_call(e.target.value);
+                }}
+              >
+                <option value="">Best Time To Call</option>
+                <option value="Morning">Morning (9 AM - 12 PM)</option>
+                <option value="Early Afternoon">
+                  Early Afternoon (12 PM - 3 PM)
+                </option>
+                <option value="Late Afternoon">
+                  Late Afternoon (3 PM - 6 PM)
+                </option>
+                <option value="Evening">Evening (6 PM - 9 PM)</option>
+                <option value="Anytime">Anytime</option>
+              </select>
             </div>
           </div>
         )}
