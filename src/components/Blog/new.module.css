@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 70px;
+}
+.headertxt {
+  width: fit-content;
+  margin-top: 30px;
+  padding: 15px 30px;
+  height: fit-content;
+  background-color: #004652;
+  color: white;
+  clip-path: polygon(85% 1%, 100% 40%, 100% 100%, 0 99%, 0 0);
+}
+.photoswrapper {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.imagewrapper {
+  position: relative;
+  height: 280px;
+}
+.subname {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  clip-path: polygon(0% 0%, 89% 0, 100% 45%, 100% 100%, 0% 100%);
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Albert sans";
+  transform: rotate(270deg) translateY(-50%);
+  width: 150px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  background-color: #7ad2a2;
+}
+.photo {
+  height: 100%;
+}
+.newwrapper {
+  margin-top: 50px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.readinfo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #96dab5;
+  letter-spacing: 1px;
+}
+.readmore {
+  cursor: pointer;
+  font-family: "Albert sans";
+  font-weight: 600;
+  font-size: 15px;
+}
+.eachphoto {
+  height: 280px;
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+.headtext {
+  font-family: "Albert Sans";
+  padding: 5px;
+  font-weight: 500;
+  font-size: 19px;
+}
+.subtext {
+  color: grey;
+  font-size: 12px;
+  padding: 5px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.subpart {
+  width: 280px;
+  height: 260px;
+  padding: 10px;
+}
+.text {
+  padding: 5px;
+  font-family: "Albert Sans";
+  font-size: 16px;
+}
+.headerwrapper {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.latest {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .latest {
+    font-size: 1.8rem;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .eachphoto {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1050px) {
+  .eachphoto {
+    height: 250px;
+  }
+  .subpart {
+    height: 250px;
+  }
+  .headtext {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .readmore {
+    font-size: 14px;
+  }
+  .imagewrapper {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 901px) {
+  .eachphoto {
+    height: 250px;
+  }
+  .imagewrapper {
+    height: 250px;
+  }
+
+  .subpart {
+    height: 250px;
+  }
+  .readinfo,
+  .subtext,
+  .text,
+  .headtext {
+    padding: 4px;
+  }
+  .readinfo {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 901px) and (min-width: 765px) {
+  .eachphoto {
+    height: 200px;
+  }
+  .imagewrapper {
+    height: 200px;
+  }
+  .subpart {
+    height: 200px;
+  }
+  .readinfo,
+  .subtext,
+  .text,
+  .headtext {
+    padding: 4px;
+  }
+  .readmore {
+    font-size: 12px;
+  }
+  .headtext {
+    font-size: 14px;
+  }
+  .subtext {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 765px) and (min-width: 650px) {
+  .subpart {
+    height: 160px;
+    width: 260px;
+  }
+  .readinfo,
+  .subtext,
+  .text,
+  .headtext {
+    padding: 4px;
+  }
+  .readmore {
+    font-size: 10px;
+  }
+  .headtext {
+    font-size: 12px;
+  }
+  .subtext {
+    font-size: 10px;
+  }
+  .text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 400px) {
+  .eachphoto {
+    height: 200px;
+  }
+  .imagewrapper {
+    height: 200px;
+  }
+  .subpart {
+    height: 200px;
+    width: 280px;
+  }
+  .readinfo,
+  .subtext,
+  .text,
+  .headtext {
+    padding: 4px;
+  }
+  .readmore {
+    font-size: 12px;
+  }
+  .headtext {
+    font-size: 15px;
+  }
+  .subtext {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 350px) {
+  .eachphoto {
+    width: 300px;
+    height: 160px;
+  }
+  .imagewrapper {
+    height: 160px;
+  }
+  .subpart {
+    height: 160px;
+    width: 280px;
+  }
+  .readinfo,
+  .subtext,
+  .text,
+  .headtext {
+    padding: 4px;
+  }
+  .readmore {
+    font-size: 8px;
+  }
+  .headtext {
+    font-size: 10px;
+  }
+  .subtext {
+    font-size: 8px;
+  }
+  .text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 350px) {
+  .eachphoto {
+    height: 160px;
+  }
+  .imagewrapper {
+    height: 160px;
+    width: 140px;
+  }
+  .subpart {
+    height: 160px;
+    width: 160px;
+  }
+  .readinfo,
+  .subtext,
+  .text,
+  .headtext {
+    padding: 2px;
+  }
+  .readmore {
+    font-size: 8px;
+  }
+  .headtext {
+    font-size: 10px;
+  }
+  .subtext {
+    font-size: 7px;
+  }
+  .text {
+    font-size: 7px;
+  }
+}
