@@ -13,6 +13,7 @@ import Terms_of_use_model from "../../components/Model/Terms_of_use_model";
 import { BrowserRouter, Router, Routes } from "react-router-dom";
 import Grant_schemes from "../../components/Grant_schemes/Grant_schemes";
 import Thank_you_model from "../../components/Model/thank_you_model";
+import Testmonials from "../../components/Testmonials/Testmonials";
 
 export default function Home() {
   const scroll = useRef(null);
@@ -63,15 +64,19 @@ export default function Home() {
           {/* <section id="grant-schemes">
             <Grant_schemes />
             <div className="divider_bar"></div>
-          </section> */}
+          // </section> */}
+          //{" "}
           {/* <section id="testimonials">
-          <Testmonials />
+          // <Testmonials />
         </section> */}
           {/* <Partner /> */}
           {/* <section id="blog">
             <Blogs />
             <div className="divider_bar"></div>
           </section> */}
+          <section id="testimonials">
+            <Testmonials />
+          </section>
           <section id="contact">
             <ContactUs />
           </section>

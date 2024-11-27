@@ -56,7 +56,6 @@ export default function Questions() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
-    alert(best_time_to_call);
     setLoading(true);
     if (
       firstName === "" ||
