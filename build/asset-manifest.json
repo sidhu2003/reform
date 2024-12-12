@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reform/static/css/main.2e25ea77.css",
-    "main.js": "/reform/static/js/main.08425a53.js",
+    "main.js": "/reform/static/js/main.ad9b7020.js",
     "static/js/453.e5bb2586.chunk.js": "/reform/static/js/453.e5bb2586.chunk.js",
     "static/media/hands.svg": "/reform/static/media/hands.d7f7c40f20cb6bf447a156dfdf8589f9.svg",
     "static/media/read.svg": "/reform/static/media/read.aa00120f140277e89bcfe6ad587ed8de.svg",
@@ -30,11 +30,11 @@
     "static/media/star.svg": "/reform/static/media/star.c9b51aed6b51d428438c19b85fe4be47.svg",
     "static/media/facebook.svg": "/reform/static/media/facebook.c8c5c10fce4b71a66dd5e906e47cb864.svg",
     "main.2e25ea77.css.map": "/reform/static/css/main.2e25ea77.css.map",
-    "main.08425a53.js.map": "/reform/static/js/main.08425a53.js.map",
+    "main.ad9b7020.js.map": "/reform/static/js/main.ad9b7020.js.map",
     "453.e5bb2586.chunk.js.map": "/reform/static/js/453.e5bb2586.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e25ea77.css",
-    "static/js/main.08425a53.js"
+    "static/js/main.ad9b7020.js"
   ]
 }
