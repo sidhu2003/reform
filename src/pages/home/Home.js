@@ -74,9 +74,9 @@ export default function Home() {
             <Blogs />
             <div className="divider_bar"></div>
           </section> */}
-          <section id="testimonials">
+          {/* <section id="testimonials">
             <Testmonials />
-          </section>
+          </section> */}
           <section id="contact">
             <ContactUs />
           </section>
